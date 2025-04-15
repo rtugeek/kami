@@ -1,0 +1,21 @@
+{
+  "fileMap": [
+    {
+      "src": "./dist/",
+      "dest": "/www/wwwroot/itime.fun/kami/"
+    },
+    {
+      "src": "pm2.json",
+      "dest": "/www/wwwroot/itime.fun/kami/pm2.json"
+    },
+    {
+      "src": "package.json",
+      "dest": "/www/wwwroot/itime.fun/kami/package.json"
+    }
+  ],
+  "ftpConfig": {
+    "host": [
+      "itime"
+    ]
+  }
+}
