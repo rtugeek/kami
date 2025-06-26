@@ -2,6 +2,7 @@ import type { TypeOrmModuleOptions } from '@nestjs/typeorm'
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies'
 import { CardCode } from '../db/CardCode'
 import { Product } from '../db/Product'
+import { UseLog } from '../db/UseLog'
 import { ValidateLog } from '../db/ValidateLog'
 
 export const databaseConfig: TypeOrmModuleOptions = {
@@ -11,7 +12,7 @@ export const databaseConfig: TypeOrmModuleOptions = {
   username: 'ka_mi',
   password: 'jooMuwe5phichai4ou4kai0eshaeti8M',
   database: 'ka_mi',
-  entities: [CardCode, Product, ValidateLog],
+  entities: [CardCode, Product, ValidateLog, UseLog],
   synchronize: false,
   logging: false,
   namingStrategy: new SnakeNamingStrategy(),

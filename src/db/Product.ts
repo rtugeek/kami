@@ -13,4 +13,7 @@ export class Product {
 
   @Column({ type: 'varchar', length: 255, nullable: true, comment: '描述' })
   desc: string
+
+  @Column({ type: 'json', nullable: true, comment: '描述' })
+  meta: object
 }
